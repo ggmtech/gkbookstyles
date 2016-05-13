@@ -1,0 +1,13 @@
+\clearpage
+
+\begin{tikzpicture}[remember picture,overlay]  %%%%%%%%%%%for next page transperant text box
+  \node[inner sep=0pt] at (current page.center) {  \includegraphics[width=\paperwidth,height=\paperheight] {TajMahal4.jpg}  };%
+\end{tikzpicture}
+
+\vskip -3.0cm
+\begin{tikzpicture}     % Now typeset a sample box.
+\node[textwidth=.5\textwidth, fill=blue!30, fill opacity=0.3, text opacity=0.7, inner sep=10pt]{
+This booklet created using all 'Free Open Source Softwares (FOSS)' on Linux platform};
+\end{tikzpicture}
+
+\vspace*{\stretch{1}}

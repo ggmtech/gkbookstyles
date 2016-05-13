@@ -1,0 +1,35 @@
+%%%%%%%%%%%   Back Cover of the Book               %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage   
+% Add a background image for the full page
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] at (current page.center) 
+{\includegraphics[width=\paperwidth,height=\paperheight]{img/TajMahal4.jpg} };
+\end{tikzpicture} %  Repeat same block for another image
+
+
+%\noindent 
+\begin{tikzpicture}     % Now typeset a sample box.
+  \node[text width=.95\textwidth, fill=green!30, fill opacity=0.5, text opacity=1, inner sep=10pt]{
+  {\bf\Large The Taj Mahal at Agra } \\
+%  \lipsum[1]
+The TajMahal is one of the world famous monoments in India , at Agra, near Delhi.\\ Contact at gopalkumar@rites.com for further details.\\
+
+};
+\end{tikzpicture}
+
+
+\vspace*{\stretch{1}}
+
+
+\begin{center}
+%\colorbox{white}{EANisbn[SC4]}
+%\colorbox{white}{}
+\includegraphics[scale=0.15]{img/gkqrcode.jpg}
+\vspace*{\baselineskip}
+
+\textbf{\textcolor{red!80}{Expotech Division \textbullet\ RITES Limited  \texttt{http://wwww.RITES.com}}}
+\vspace*{\baselineskip}
+
+\colorbox{white}{
+\textbf{\textcolor{blue!60}{Taj Mahal at Agra, India \textbullet\ Further Details: \texttt{gopalkumar@rites.comm}}}   }
+\end{center}
