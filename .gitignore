@@ -1,0 +1,12 @@
+#ignore the follwoing files
+*.log
+*.toc
+*.out
+*.pdf
+*.aux
+img/*.pdf
+img/*.png
+img/*.jpg
+img/*.doc
+chp/*.doc
+chp/*.odt

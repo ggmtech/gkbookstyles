@@ -1,0 +1,211 @@
+\documentclass[11pt,twoside,openany,svgnames,x11names]{gkbookm1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\fcolorbox{declared-color-frame}{declared-color-background}{text}
+\setlength{\parindent}{0pt}  % or \usepackage{parskip} \parskip
+
+\begin{document}
+\frontmatter %% Cover page %%%%%%%%%%%%%%
+\thispagestyle{empty}  %% No header footer
+\ThisCenterWallPaper{0.85}{clw1.jpg} %WheelRITES.png} %
+\tikz[remember picture,overlay]%
+\node[fill=Sienna,text=white,font=\LARGE\bfseries,text=Cornsilk,%
+minimum width=\paperwidth,minimum height=5em,anchor=north]%
+at (current page.north){Offer No: WA/CLW/eLocomotives/0001{ }\today};
+
+{\centering \bfseries\color{LightGoldenrod!40!blue}\fontsize{32pt}{46pt}\selectfont Indian Railways Standard \par Electrical Locomotives \\ Chittaranjan Locomotive Works, Chittaranjan \par }
+
+\vspace*{32\baselineskip}
+\begin{center}
+{\LARGE\color{blue} \textbf{  \scshape{Indian Railways and RITES} } \par  }   % LightGoldenrod}
+\end{center}
+
+\tikz[remember picture,overlay]%
+\node[fill=Sienna,font=\LARGE\bfseries,text=Cornsilk,
+minimum width=\paperwidth,minimum height=3em,anchor=south]at (current page.south)%{One Line Text};
+{Expotech Division, RITES Limited, India};
+
+\begin{center}
+\LARGE\bfseries\color{SaddleBrown!30!black}
+RITES proposal for supply of Standard Gauge Electric Locomotives
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\input{chp/CLWCopyright.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter%startarabic1
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{chp/CLWStickyNotes.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Introduction \& Background}  %get belownoted image
+%\renewcommand\chapterillustration{img/WheelRITES.png} %WheelFurnace.jpg}
+%\input{chp/KRCintro.tex}  %Add if useful \ClientICSWho,
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Electric Locomotives from Indian Railways}
+\renewcommand\chapterillustration{img/IRlogo.jpg}
+\input{chp/CLWintro.tex}
+\newpage
+%\input{chp/RWFglance}
+%\includepdf[pages={1}, frame, scale=0.86,%landscape %nup=2x2, deltax=10, deltay=10, %
+%pagecommand={\thispagestyle{plain}}  ]
+%{CV/RITESorgchart2015.pdf}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+%\chapter[Product Range of Wheel and Axles]{Product Range of Wheel and Axles}
+%\renewcommand\chapterillustration{img/IRlogo.jpg}
+%\input{chp/RWFproductrange.tex}
+%\newpage
+%\input{chp/RWFglance}
+%\includepdf[pages={1}, frame, scale=0.86,%landscape %nup=2x2, deltax=10, deltay=10, %
+%pagecommand={\thispagestyle{plain}}  ]
+%{CV/RITESorgchart2015.pdf}
+
+
+% % % % % % % % % % % % % % % % %
+%\renewcommand\chapterillustration{img/WheelRITES.png}%\chapter{Appendix}
+%\clearpage 
+%\pagestyle{fancy}
+%\section*{ Copy of the KRC invitation for EOI}
+%\pagestyle{fancy}
+%\pagenumbering{num_style} %arabic:roman:Roman:alph: Alph: 
+
+%\includegraphics[ scale=0.8]{chp/KRCsafetyEOI.pdf} % try \includepdf[scale=0.8,pages=1,pagecommand=\subsection{blub}]{testpdf}
+
+% % % % %was OK but page number not coming
+%\includepdf[ pages={1,2,3,4,5,6,7,8,9,10}, nup=2x2, %landscape,    %pages={1,{}, 4-6,9 } , % , landscape, linktodoc]
+%frame, scale=0.80, %trim = 10mm 80mm 20mm 5mm, clip,
+%deltax=10, deltay=10, %page separation
+%offset=0 0 %Displace the origin of the included pages
+%angle=-0, offset=0in 0in,    
+%addtolist={3, table, {The User Roles table}, tab:UserRoles}, 
+%pagecommand={} %{\pagestyle{fancy}} %plain}} %headings}} %plain}}
+%]{chp/KRCsafetyEOI.pdf}
+% % % % % % % % % % % % % % % % % % %
+%\chapter[The Rail Wheel Factory]{Rail Wheel Factory}
+%\renewcommand\chapterillustration{img/WheelRITES.png}
+
+\includepdf[pages={1}, frame, scale=0.86,%landscape %nup=2x2, deltax=10, deltay=10, %
+pagecommand={\thispagestyle{plain}}  ]
+{img/clwlocos.jpg}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%RITES
+\chapter[The RITES limited]{The RITES limited}
+\renewcommand\chapterillustration{img/RITESlogo3.jpg}
+%\newpage
+%\section{Capabilities of RITES in brief}
+\input{chp/RWFRITEScapability.tex}
+\section{Brief Introductory Brochure of RITES}
+\includepdf[ pages={1-34}, frame, scale=0.880, %3}, frame, scale=0.880,  %
+%nup=2x2, deltax=10, deltay=10, %
+pagecommand={\thispagestyle{plain}}
+]{chp/RITESBrochure2014.pdf} 
+
+%\appendix
+
+%\renewcommand\chapterillustration{img/WheelRITES.png} 
+%\chapter{Appendix}
+%\clearpage 
+%\pagestyle{fancy}
+%\section*{ Copy of the KRC invitation for EOI}
+%\pagestyle{fancy}
+%\pagenumbering{num_style} %arabic:roman:Roman:alph: Alph: 
+
+%\includegraphics[ scale=0.8]{chp/KRCsafetyEOI.pdf} % try \includepdf[scale=0.8,pages=1,pagecommand=\subsection{blub}]{testpdf}
+
+% % % % %was OK but page number not coming
+%\includepdf[ pages={1,2,3,4,5,6,7,8,9,10}, nup=2x2, %landscape,    %pages={1,{}, 4-6,9 } , % , landscape, linktodoc]
+%frame, scale=0.80, %trim = 10mm 80mm 20mm 5mm, clip,
+%deltax=10, deltay=10, %page separation
+%offset=0 0 %Displace the origin of the included pages
+%angle=-0, offset=0in 0in,    
+%addtolist={3, table, {The User Roles table}, tab:UserRoles}, 
+%pagecommand={} %{\pagestyle{fancy}} %plain}} %headings}} %plain}}
+%]{chp/KRCsafetyEOI.pdf}
+% % % % % % % % % % % % % % % % % % %
+
+% % %page of
+%\includepdf[pages=-, nup=2x2,
+%frame, scale=0.80,
+%deltax=10, deltay=10,
+%pagecommand={\thispagestyle{plain}}]{chp/KRCsafetyEOI.pdf}
+%\includepdf[pages=-,frame,scale=0.85, nup=2x2,
+%pagecommand={\pagestyle{plain}}]{chp/KRCsafetyEOI.pdf} %page numbers.
+
+%\input{chp/KRCrequirements.tex} %text not corrected
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%	    Colophon	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\pagestyle{empty}\newpage\mbox{This page is intentionally blank to enable quatro print}
+%\input{chp/Colophon.tex}   % TajMahal with colophon one line text
+
+%%%%%%%%	Back cover	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{chp/BookBackCoverTaj.tex} 
+% % % % % % % % % % % % % % % % % % % %
+%% Temporarily enlarge this page to push  down the bottom margin
+\clearpage
+\enlargethispage{3\baselineskip}
+\thispagestyle{empty}
+
+\pagecolor[HTML]{0E0407}   %\pagecolor[HTML]{0C0303}
+
+\begin{center}
+\begin{minipage}{.8\textwidth}
+\color{Cornsilk}\Large\bfseries
+
+\begin{center}
+\huge\bfseries\sffamily\color{lime}`RITES Limited` \\ `From Concept to Commissioning!!'
+\end{center}
+
+\input{chp/RWFbackintro.tex}
+
+
+\end{minipage}
+\end{center}
+
+\vspace*{\stretch{1}}
+
+%\begin{center}
+%\colorbox{white}{\EANisbn[SC4]}
+%\vspace*{\baselineskip}
+%\textbf{\textcolor{LightGoldenrod!50!Gold}{RITES Limited \textbullet\ \texttt{http://www.rites.com}}}
+%\textbf{\textcolor{LightGoldenrod}{Cover:The map from wwww.un.org \textbullet\ \texttt{http://www.indianrailways.gov.in}}}
+%\end{center}
+
+
+\begin{center}
+%\colorbox{white}{\EANisbn[SC4]}
+\includegraphics[scale=0.19]{img/gkqrcode.jpg}
+\begin{tikzpicture}  %sample box of text.
+\node[text width=.5\textwidth,fill=yellow!30,fill opacity=0.6,text opacity=0.8, inner sep=10pt] %also makes photo transp
+    { \centering {\bf Export of Cast Wheel Axles}\\ CASE NO WA/Wheel Axles/0001\\  };
+\end{tikzpicture}
+
+\vspace*{\baselineskip}
+\textbf{\textcolor{red!80}{Expotech Division, RITES Limited \texttt{http://www.rites.com}}}
+\vspace*{\baselineskip}
+\colorbox{white}{\textbf{\textcolor{red!60}{Illustrations : \textbullet\ \texttt{gopalkumar@rites.com}}}   }
+\end{center}
+
+
+\end{document}
+
+
